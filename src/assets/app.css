@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+/* ------------------ Generali ------------------ */
+
+* {
+    font-family: "Fraunces", serif !important;
+}
+
+.title-dark {
+    color: #b0f5f8;
+}
+
+.title-light {
+    color: #0f6b70;
+}
+
+.addCommentButton,
+.detailsBtn {
+    align-self: center;
+    width: fit-content;
+    background-color: #0f6b70;
+    border: #0d4a4a;
+}
+
+.addCommentButton:hover,
+.detailsBtn:hover {
+    background-color: #0b3f3f;
+}
+
+/* ------------------ Navbar ------------------ */
+
+nav {
+    background-color: #ecf6f9;
+}
+
+nav > .container-fluid > a {
+    color: #055160;
+}
+
+.navLogo {
+    height: 35px;
+}
+
+.themeButton {
+    border: none;
+    font-size: 1.7em;
+    padding: 0 0.5rem;
+}
+
+/* ------------------ Welcome ------------------ */
+
+.myAlert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myAlert > * {
+    color: #0d4a4a;
+    text-align: center;
+}
+
+.alertLogo {
+    width: 80%;
+}
+
+/* ------------------ All the books ------------------ */
+
+.container .card {
+    border: none;
+}
+
+.container .card img {
+    aspect-ratio: 2.2 / 3;
+    object-fit: cover;
+}
+
+/* ------------------ Area commenti ------------------ */
+
+.sidebar {
+    position: sticky;
+    top: 80px;
+    /* overflow-y: scroll;
+    max-height: 80vh;
+    border: solid 2px #dadcde;
+    border-radius: 1rem; */
+}
+
+.carousel-indicators button {
+    background-color: #0f6b70 !important;
+}
+
+.carousel-indicators {
+    margin: 0;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(34%) sepia(80%) saturate(325%) hue-rotate(150deg);
+}
+
+.carousel .card-subtitle {
+    color: goldenrod;
+}
+
+.carousel .card button {
+    font-size: 0.9em;
+}
+
+.carousel .card-title input {
+    border: solid 1px #dadcde;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    background-color: #0f6b70;
+    border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    background-color: #0f6b70;
+    border: none;
+}
+
+input[type="range"]::-ms-thumb {
+    background-color: #0f6b70;
+    border: none;
+}
+
+.add-review-title {
+    font-size: 1.2em;
+}
+
+/* ------------------ Footer ------------------ */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #055160;
+    color: #ecf6f9;
+    padding: 0.7rem 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* ------------------ Media queries ------------------ */
+
+@media (min-width: 600px) {
+    .alertLogo {
+        width: 60%;
+    }
+}
+
+@media (min-width: 992px) {
+    .alertLogo {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .alertLogo {
+        width: 30%;
+    }
+}
