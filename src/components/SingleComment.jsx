@@ -58,6 +58,7 @@ function SingleComment({ review, onUpdateComment, onDeleteComment }) {
                             </label>
                             <br />
                             <Form.Range
+                                className="w-75"
                                 id="editedRate"
                                 min={1}
                                 max={5}
